@@ -59,15 +59,34 @@ header a:hover{
     width: 400px;
 }
 
-.hero{
+.hero, .hero1, .hero2, .hero3, .hero4, .paragrafo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.hero, .hero1, .hero2, .hero3, .hero4 {
     color: white;
 }
 
-.H{
+.hero{
     background-color: #80B280;
+}
+
+.hero1{
+    background-color: #83BE7E;
+}
+
+.hero2{
+    background-color: #AD9B7A;
+}
+
+.hero3{
+    background-color: #C2A984;
+}
+
+.hero4{
+    background-color: #97C383;
 }
 
 @media (max-width:800px){
