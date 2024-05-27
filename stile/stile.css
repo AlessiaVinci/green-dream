@@ -147,6 +147,22 @@ h2{
     max-width: 256px;
 }
 
+.erbacea {
+    max-width: 220px;
+}
+
+.bulbosa {
+    max-width: 222px;
+}
+
+.arborea {
+    max-width: 401px;
+}
+
+.rampicante {
+    max-width: 274px;
+}
+
 h3{
     font-weight: 700;
     font-size: 22px;
@@ -273,7 +289,7 @@ p{
     
     .foto a:before { 
       content: "";
-      background: rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.7);
       top: 50%;
       left: 0;
       width: 100%;
@@ -290,6 +306,7 @@ p{
       transform: translate(-50%, -50%);
       font-weight: bold;
       font-size: 21px;
+      text-align: center;
       color: black;
       display: none;
     }
@@ -298,6 +315,7 @@ p{
     .foto a:hover span, .foto a:hover:before {
       display: block;
     }
+
 
 @media (max-width:800px){
     header nav ul, footer nav ul {
