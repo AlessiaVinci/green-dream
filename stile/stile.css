@@ -1,7 +1,11 @@
 body{
     background-color:#ffffff;
-    margin: auto;
+    margin: 0;
     font-family: "Sora", sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 header {
@@ -55,37 +59,15 @@ footer a:hover{
     font-weight: 700;
     font-size: 18px;
 }
-
+  
 .contenuto, .testo {
     width: 680px;
 }
 
 .contenuto img {
-	weight: 480px;
+    width: 480px;
 	height: 320px;
 }
-
-.img {
-    position: relative;
-  }
-  
-  .green {
-    position: relative;
-    z-index: 1;
-    height: 100px;
-    margin: 30px;
-  }
-  
-  .minimal{
-    position: absolute;
-    z-index: 3;
-  
-    height: 60px;
-    width: 70%;
-    left: 50px;
-    top: 50px;
-  }
-
 
 .paragrafo {
     display: flex;
@@ -195,16 +177,63 @@ p{
     padding-top: 120px;
 }
 
-.card {
+.cardhome {
     width: 280px;
     height: 220px;
     background-color: #80B280;
+    align-content: center;
+    
 }
 
-.testocard a {
+.testohome a {
     color: white;
 }
 
+.testohome, .imagehome {
+    margin: auto;
+}
+
+#ie {
+    width: 131px;
+}
+
+#te {
+    width: 92px;
+}
+
+#ia {
+    width: 138px;
+}
+
+#ta {
+    width: 94px;
+}
+
+#ib {
+    width: 121px;
+}
+
+#tb {
+    width: 93px;
+}
+
+#ir {
+    width: 138px;
+}
+
+#tr {
+    width: 132px;
+}
+
+.card {
+    display: grid;
+}
+
+.foto img{
+    width: 280px;
+    height: 222px;
+
+}
 
 @media (max-width:800px){
     header nav ul, footer nav ul {
