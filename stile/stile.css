@@ -206,7 +206,9 @@ p{
     height: 220px;
     background-color: #80B280;
     align-content: center;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .testohome a {
@@ -217,36 +219,25 @@ p{
     margin: auto;
 }
 
-#ie {
-    width: 131px;
-}
-
 #te {
     width: 92px;
-}
-
-#ia {
-    width: 138px;
 }
 
 #ta {
     width: 94px;
 }
 
-#ib {
-    width: 121px;
-}
-
 #tb {
     width: 93px;
 }
 
-#ir {
-    width: 138px;
-}
-
 #tr {
     width: 132px;
+}
+
+.imagehome {
+    width: 200px;
+    height: 160px;
 }
 
 .card {
@@ -315,6 +306,57 @@ p{
     .foto a:hover span, .foto a:hover:before {
       display: block;
     }
+
+
+    .img {
+        position: relative;
+    }
+    
+    .grafico {
+        position: relative;
+        z-index: 1;
+        left: 50px;
+    }
+    
+    .minimal{
+        position: absolute;
+        z-index: 3;
+        height: 253px;
+        width: 281px;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+    #ee {
+        width: 700px;
+        height: 100%;
+        top: 25%;
+        transform: translateY(-15%)
+        
+    }
+
+    #r2 {
+        object-position: 0 82%; 
+    }
+
+    #p3 {
+      
+        object-position:  0 70%;
+    }
+
+    #g4 {
+        object-position: 0 35%;
+    }
+
+    #t3 {
+        object-position: 0 63%;
+    }
+
+    .interlinea {
+        line-height: 90px;
+    }
+
 
 
 @media (max-width:800px){
