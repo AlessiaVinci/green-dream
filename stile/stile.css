@@ -9,6 +9,10 @@ img, svg {
     max-width: 100%;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -30,22 +34,14 @@ footer{
 .contheader{
     display: flex;
     align-items: center;
-    width: 1400px;
+    width: 1350px;
     justify-content: space-between;
     margin: auto;
     padding: 12px;
 }
 
-header ul, footer ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 16px;
-}
-
-header a, footer a {
+header a {
     text-decoration: none;
-    color: #ffffff;
 }
 
 header a:hover{
@@ -59,8 +55,72 @@ footer a:hover{
 .titoloheader{
     font-weight: 700;
     font-size: 18px;
+    color: white;
 }
-  
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  gap: 16px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+ text-decoration: underline
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .contenuto, .testo {
     width: 680px;
 }
