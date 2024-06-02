@@ -112,14 +112,28 @@ li.dropdown {
   display: block;
 }
 
-.contenuto, .testo {
-    width: 680px;
+main{
+    margin: auto;
+    padding-top: 72px;
+    width: 100%;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+main a:hover{
+    text-decoration: underline;
 }
 
 .contenuto{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 680px;
 }
 
 .contenuto img {
@@ -179,20 +193,6 @@ li.dropdown {
     background-color: #97C383;
 }
 
-main{
-    padding-top: 72px;
-}
-
-main a {
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-    font-size: 22px;
-}
-
-main a:hover{
-    text-decoration: underline;
-}
 
 h1{
     font-weight: 700;
@@ -291,8 +291,7 @@ p{
 }
 
 .cardspecie:hover{
-    text-decoration: underline;
-    color: white;
+    text-decoration: none;
 }
 
 .imagehome img {
@@ -315,12 +314,12 @@ p{
     }
     
     
-    .card {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding-top: 30px;
-    }
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 30px;
+}
     
     .foto {
       position: relative;
@@ -335,7 +334,7 @@ p{
     
     .foto a:before { 
       content: "";
-      background: rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.8);
       top: 50%;
       left: 0;
       width: 100%;
@@ -435,7 +434,253 @@ p{
         line-height: 90px;
     }
 
+@media (max-width: 1024px){
+    .contheader{
+        padding: 12px 25px;
+    }
+
+    .hero, .hero1, .hero2, .hero3, .hero4, .paragrafo, .paragrafoarboree{
+        padding: 0 30px;
+        padding-top: 30px;
+    }
+
+    #hero{
+        bottom: -20px;
+    }
+
+    .illustrazione, .minimal, .marchio {
+        width: 366px;
+    }
+
+    .illustrazione img {
+        margin-top: 30%;
+    }
+
+    .minimal img{
+        margin-top: 50%;
+    }
+
+    .marchio img {
+        margin-top: 50%;
+    }
+
+    .grafico, .minimal, .marchio, .illustrazione {
+        height: 540px;
+    }
+
+    svg {
+        height: 100%;
+    }
+
+    h1{
+        font-size: 50px;
+        max-width: 350px;
+    }
+
+    h2{
+        font-size: 23px;
+        max-width: 235px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        padding: 30px 30px 0 30px;
+    }
+
+    .interlinea{
+        line-height: 60px;
+    }
+    
+    .paragrafo{
+        max-width: 1020px;
+    }
+
+    .paragrafoarboree{
+        max-width: 1020px;
+    }
+
+    .testohero{
+        max-width: 350px;
+    }
+
+    .testo{
+        max-width: 550px;
+    }
+
+    .box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 580px;
+    }
+
+    .card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .foto a span {
+        position: absolute;
+        background-color: rgba(255,255,255,0.8);
+        color:black;
+        width: 100%;
+        height: 33%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .foto a:hover span, .foto a:hover:before {
+        display: none;
+      }
+}
+
+@media (max-width: 910px) {
+    .illustrazione img {
+        margin-top: 15%;
+    }
+
+    .minimal img{
+        margin-top: 35%;
+    }
+
+    .marchio img {
+        margin-top: 45%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        width: 580px;
+        margin: auto;
+    }
+}
+
+@media (max-width:850px){
+    header nav ul, footer nav ul {
+        display: block;
+    }
+    
+    header p, footer p {
+        align-content: center;
+    }
+    footer a {
+        font-size: 13px;
+    }
+
+    .hero, .hero1, .hero2, .hero3, .hero4, .paragrafo, .paragrafoarboree{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #hero {
+        width: 450px;
+    }
+
+    .testohero {
+        max-width: 450px;
+    }
+
+    svg{
+        height: 100%;
+    }
+
+    .marchio, .illustrazione, .minimal {
+        right: 12%;
+    }
+    
+    .minimal img {
+        margin-top: 30%;
+    }
+
+    .marchio img{
+        margin-top: 40%;
+    }
+
+    .illustrazione img{
+        margin-top: 20%;
+    }
+
+    .paragrafo {
+        margin: auto;
+        width: 480px;
+    }
+}
+
+@media(max-width:693px) {
+    main{
+        padding-top: 120px;
+    }
+}
+
 @media(max-width:600px){
+    main {
+        padding-top: 78px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2{
+        font-size: 22px;
+        max-width: 225px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .box {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 280px;
+    }
+
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+        width: 280px;
+        margin: auto;
+    }
+
+    .grafico, .illustrazione, .minimal, .marchio {
+        height: 450px;
+    }
+
+    .marchio, .illustrazione, .minimal {
+        width: 350px;
+        right: 0;
+    }
+
+    .marchio img {
+        margin-top: 35%;
+    }
+
+    .illustrazione img {
+        margin-top: 15%;
+    }
+
+    .minimal img {
+        margin-top: 25%;
+    }
+
+    .hero, .hero1, .hero2, .hero3, .hero4 {
+        padding: 0 50px;
+    }
+
+    #hero, .testohero {
+        width: 350px;
+    }
+
+    .paragrafo, .paragrafoarboree {
+        max-width: 350px;
+        padding-top: 30px;
+    }
+
     .home{
         flex-direction: column;
     }
@@ -536,3 +781,35 @@ p{
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 }
+
+/* @media (max-width:400px) {
+    .paragrafo, .paragrafoarboree {
+        max-width: 200px;
+    }
+
+    #hero {
+        width: 200px;
+    }
+
+    h1 {
+        max-width: 200px;
+    }
+
+    .testohero {
+        width: 200px;
+    }
+
+    .contenuto img {
+        height: 250px;
+    }
+
+    .marchio, .illustrazione, .minimal {
+        width: 50%;
+        height: 50%;
+        right: 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+} */
