@@ -718,12 +718,16 @@ p{
         align-items: center;
     }
 
+    footer ul li a {
+        padding: 4px 6px;
+    }
+
     ul{
         display: flex;
         flex-direction: column;
         list-style-type: none;
         gap: 6px;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
     }
 
