@@ -143,21 +143,14 @@ main a:hover{
 }
 
 .paragrafo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    max-width: 1180px;
-    margin: auto;
     padding-top: 100px;
 }
 
-.paragrafoarboree {
+.paragrafo, .paragrafoarboree {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    max-width: 1180px;
+    width: 1180px;
     margin: auto;
 }
 
@@ -373,8 +366,6 @@ p{
         position: absolute;
         z-index: 3;
         top: 0%;
-        height: 612px;
-        width: 480px;
     }
 
     .minimal img {
@@ -387,12 +378,10 @@ p{
         position: absolute;
         z-index: 3;
         top: 0%;
-        height: 612px;
-        width: 480px;
+        left: 7%;
     }
 
     .illustrazione img {
-        height: 80%;
         width: 80%;
         margin: auto;
         margin-top: 15%;
@@ -402,15 +391,12 @@ p{
         position: absolute;
         z-index: 3;
         top: 0%;
-        height: 612px;
-        width: 480px;
     }
 
     .marchio img{
-        height: 255px;
-        width: 281px;
+        width: 80%;
         margin: auto;
-        margin-top: 35%;
+        margin-top: 30%;
     }
 
     #r2 {
@@ -434,38 +420,31 @@ p{
         line-height: 90px;
     }
 
-@media (max-width: 1024px){
+@media (max-width: 1270px){
     .contheader{
         padding: 12px 25px;
     }
 
-    .hero, .hero1, .hero2, .hero3, .hero4, .paragrafo, .paragrafoarboree{
+    .paragrafo, .paragrafoarboree{
         padding: 0 30px;
         padding-top: 30px;
+        max-width: 850px;
+    }
+
+    .piante{
+        max-width: 850px;
+    }
+
+    .hero, .hero1, .hero2, .hero3, .hero4 {
+        padding: 0 30px;
     }
 
     #hero{
         bottom: -20px;
     }
 
-    .illustrazione, .minimal, .marchio {
-        width: 366px;
-    }
-
-    .illustrazione img {
-        margin-top: 30%;
-    }
-
-    .minimal img{
-        margin-top: 50%;
-    }
-
-    .marchio img {
-        margin-top: 50%;
-    }
-
-    .grafico, .minimal, .marchio, .illustrazione {
-        height: 540px;
+    .illustrazione{
+        left: 6%;
     }
 
     svg {
@@ -488,19 +467,13 @@ p{
 
     h4{
         padding: 30px 30px 0 30px;
+        max-width: 850px;
     }
 
     .interlinea{
         line-height: 60px;
     }
     
-    .paragrafo{
-        max-width: 1020px;
-    }
-
-    .paragrafoarboree{
-        max-width: 1020px;
-    }
 
     .testohero{
         max-width: 350px;
@@ -518,6 +491,7 @@ p{
 
     .card{
         grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
     
     .foto a span {
@@ -535,12 +509,21 @@ p{
     .foto a:hover span, .foto a:hover:before {
         display: none;
       }
-}
+
+    .erbacea {
+        max-width: 202px;
+    }
+    
+    .bulbosa {
+        max-width: 205px;
+    }
+        
+    .rampicante {
+        max-width: 252px;
+    }
+    }
 
 @media (max-width: 910px) {
-    .illustrazione img {
-        margin-top: 15%;
-    }
 
     .minimal img{
         margin-top: 35%;
@@ -554,28 +537,23 @@ p{
         font-size: 15px;
     }
 
+    h4 {
+        max-width: 480px;
+    }
+
     .card {
         grid-template-columns: repeat(2, 1fr);
         width: 580px;
         margin: auto;
+        gap: 20px;
     }
-}
-
-@media (max-width:850px){
-    header nav ul, footer nav ul {
-        display: block;
-    }
-    
-    header p, footer p {
-        align-content: center;
-    }
-    footer a {
-        font-size: 13px;
-    }
-
     .hero, .hero1, .hero2, .hero3, .hero4, .paragrafo, .paragrafoarboree{
         flex-direction: column;
         padding: 0;
+    }
+
+    .paragrafo, .paragrafoarboree {
+        gap: 20px;
     }
 
     #hero {
@@ -588,10 +566,6 @@ p{
 
     svg{
         height: 100%;
-    }
-
-    .marchio, .illustrazione, .minimal {
-        right: 12%;
     }
     
     .minimal img {
@@ -606,19 +580,18 @@ p{
         margin-top: 20%;
     }
 
-    .paragrafo {
+    .paragrafo, .paragrafoarboree {
         margin: auto;
         width: 480px;
+        padding-top: 30px;
+    }
+
+    .arborea{
+        max-width: 370px;
     }
 }
 
-@media(max-width:693px) {
-    main{
-        padding-top: 120px;
-    }
-}
-
-@media(max-width:600px){
+@media(max-width:693px){
     main {
         padding-top: 78px;
     }
@@ -628,7 +601,7 @@ p{
     }
 
     h2{
-        font-size: 22px;
+        font-size: 21px;
         max-width: 225px;
     }
 
@@ -647,20 +620,20 @@ p{
         margin: auto;
     }
 
-    .grafico, .illustrazione, .minimal, .marchio {
-        height: 450px;
-    }
-
-    .marchio, .illustrazione, .minimal {
-        width: 350px;
-        right: 0;
+    .grafico svg {
+        width: 693px;
     }
 
     .marchio img {
         margin-top: 35%;
     }
 
+    .illustrazione{
+        left: 0%;
+    }
+
     .illustrazione img {
+        width: 75%;
         margin-top: 15%;
     }
 
@@ -679,6 +652,26 @@ p{
     .paragrafo, .paragrafoarboree {
         max-width: 350px;
         padding-top: 30px;
+    }
+
+    .erbacea {
+        max-width: 185px;
+    }
+
+    .arborea{
+        max-width: 337px;
+    }
+
+    .bulbosa {
+        max-width: 187px;
+    }
+
+    .rampicante {
+        max-width: 230px;
+    }
+
+    footer ul {
+        gap: 0;
     }
 
     .home{
@@ -782,7 +775,7 @@ p{
     }
 }
 
-/* @media (max-width:400px) {
+@media (max-width:460px) {
     .paragrafo, .paragrafoarboree {
         max-width: 200px;
     }
@@ -793,6 +786,12 @@ p{
 
     h1 {
         max-width: 200px;
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 19px;
+        width: 194px;
     }
 
     .testohero {
@@ -803,13 +802,25 @@ p{
         height: 250px;
     }
 
-    .marchio, .illustrazione, .minimal {
-        width: 50%;
-        height: 50%;
-        right: 0;
-    }
-
     p {
         font-size: 14px;
     }
-} */
+
+    .grafico{
+        width: 320px;
+        margin: auto;
+    }
+
+    .erbacea{
+        width: 167px;
+    }
+
+    .arborea{
+        width: 171px;
+    }
+
+    .bulbosa{
+        width: 169px;
+    }
+
+}
