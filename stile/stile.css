@@ -223,6 +223,10 @@ h3{
     max-width: 374px;
 }
 
+#titolohome2{
+    width: 291px;
+}
+
 h4{
     font-weight: 700;
     font-size: 35px;
@@ -280,7 +284,8 @@ p{
 .cardspecie {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 7px;
+    margin-top: 5%;
 }
 
 .cardspecie:hover{
@@ -465,6 +470,14 @@ p{
         font-size: 20px;
     }
 
+    #titolohome{
+        width: 258px;
+    }
+
+    #titolohome2{
+        width: 265px;
+    }    
+
     h4{
         padding: 30px 30px 0 30px;
         max-width: 850px;
@@ -535,6 +548,10 @@ p{
 
     p {
         font-size: 15px;
+    }
+
+    #titolohome {
+        width: 340px;
     }
 
     h4 {
@@ -777,11 +794,15 @@ p{
 
 @media (max-width:460px) {
     .paragrafo, .paragrafoarboree {
-        max-width: 200px;
+        max-width: 250px;
+    }
+
+    .hero, .hero1, .hero2, .hero3, .hero4 {
+        padding: 0 30px;
     }
 
     #hero {
-        width: 200px;
+        width: 250px;
     }
 
     h1 {
@@ -794,17 +815,25 @@ p{
         width: 194px;
     }
 
+    h3 {
+        font-size: 17px;
+    }
+
     .testohero {
-        width: 200px;
+        width: 250px;
     }
 
     .contenuto img {
-        height: 250px;
+        height: 220px;
     }
 
-    p {
-        font-size: 14px;
+    #titolohome {
+        width: 164px;
     }
+
+     #titolohome2{
+        width: 225px;
+     }
 
     .grafico{
         width: 320px;
