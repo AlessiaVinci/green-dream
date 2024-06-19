@@ -52,6 +52,14 @@ footer a:hover{
     font-weight: 700;
     font-size: 18px;
     color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.titoloheader img{
+    max-height: 22px;
 }
 
 footer ul {
@@ -392,18 +400,6 @@ p{
         margin-top: 15%;
     }
 
-    .marchio {
-        position: absolute;
-        z-index: 3;
-        top: 0%;
-    }
-
-    .marchio img{
-        width: 80%;
-        margin: auto;
-        margin-top: 30%;
-    }
-
     #r2 {
         object-position: 0 82%; 
     }
@@ -542,10 +538,6 @@ p{
         margin-top: 35%;
     }
 
-    .marchio img {
-        margin-top: 45%;
-    }
-
     p {
         font-size: 15px;
     }
@@ -564,6 +556,7 @@ p{
         margin: auto;
         gap: 20px;
     }
+
     .hero, .hero1, .hero2, .hero3, .hero4, .paragrafo, .paragrafoarboree{
         flex-direction: column;
         padding: 0;
@@ -587,10 +580,6 @@ p{
     
     .minimal img {
         margin-top: 30%;
-    }
-
-    .marchio img{
-        margin-top: 40%;
     }
 
     .illustrazione img{
@@ -639,10 +628,6 @@ p{
 
     .grafico svg {
         width: 693px;
-    }
-
-    .marchio img {
-        margin-top: 35%;
     }
 
     .illustrazione{
@@ -798,19 +783,19 @@ p{
 
 @media (max-width:460px) {
     .paragrafo, .paragrafoarboree {
-        max-width: 250px;
+        max-width: 292px;
     }
 
     .hero, .hero1, .hero2, .hero3, .hero4 {
-        padding: 0 30px;
+        padding: 0 15px;
     }
 
     #hero {
-        width: 250px;
+        max-width: 292px;
     }
 
     h1 {
-        max-width: 200px;
+        max-width: 292px;
         font-size: 25px;
     }
 
@@ -824,7 +809,7 @@ p{
     }
 
     .testohero {
-        width: 250px;
+        max-width: 292px;
     }
 
     .contenuto img {
@@ -832,12 +817,20 @@ p{
     }
 
     #titolohome {
-        width: 164px;
+        max-width: 292px;
     }
 
      #titolohome2{
         width: 225px;
-     }
+    }
+
+    .box{
+        max-width: 292px;
+    }
+
+    .cardhome{
+        width: 292px;
+    }
 
     .grafico{
         width: 320px;
