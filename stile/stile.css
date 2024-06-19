@@ -783,7 +783,7 @@ p{
 
 @media (max-width:460px) {
     .paragrafo, .paragrafoarboree {
-        max-width: 292px;
+        max-width: 335px;
     }
 
     .hero, .hero1, .hero2, .hero3, .hero4 {
@@ -791,11 +791,11 @@ p{
     }
 
     #hero {
-        max-width: 292px;
+        max-width: 335px;
     }
 
     h1 {
-        max-width: 292px;
+        max-width: 335px;
         font-size: 25px;
     }
 
@@ -809,7 +809,7 @@ p{
     }
 
     .testohero {
-        max-width: 292px;
+        max-width: 335px;
     }
 
     .contenuto img {
@@ -817,7 +817,7 @@ p{
     }
 
     #titolohome {
-        max-width: 292px;
+        max-width: 335px;
     }
 
      #titolohome2{
@@ -825,11 +825,11 @@ p{
     }
 
     .box{
-        max-width: 292px;
+        max-width: 335px;
     }
 
     .cardhome{
-        width: 292px;
+        max-width: 335px;
     }
 
     .grafico{
