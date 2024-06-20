@@ -171,27 +171,26 @@ main a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
 }
 
 .hero{
-    background-color: #80B280;
+    background-color: #E9E3AC;
 }
 
 .hero1{
-    background-color: #83BE7E;
+    background-color: #CADFB5;
 }
 
 .hero2{
-    background-color: #AD9B7A;
+    background-color: #CDC0A9;
 }
 
 .hero3{
-    background-color: #C2A984;
+    background-color: #E6D1B1;
 }
 
 .hero4{
-    background-color: #97C383;
+    background-color: #B5CEAA;
 }
 
 
@@ -204,7 +203,7 @@ h1{
 h2{
     font-weight: 600;
     font-size: 25px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid;
     max-width: 256px;
 }
 
