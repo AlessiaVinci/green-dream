@@ -207,22 +207,6 @@ h2{
     max-width: 256px;
 }
 
-.erbacea {
-    max-width: 220px;
-}
-
-.bulbosa {
-    max-width: 222px;
-}
-
-.arborea {
-    max-width: 401px;
-}
-
-.rampicante {
-    max-width: 274px;
-}
-
 h3{
     font-weight: 700;
     font-size: 22px;
@@ -256,6 +240,8 @@ p{
 
 .testohero{
     width: 480px;
+    border-top: solid black 3px;
+    padding-top: 15px;
 }
 
 .box {
@@ -266,18 +252,46 @@ p{
     padding-top: 100px;
 }
 
-.cardhome {
+.carderbacee, .cardarboree, .cardbulbose, .cardrampicanti {
     width: 280px;
     height: 220px;
-    background-color: #80B280;
+    background-color: #CAB600;
 }
 
-.cardhome:hover {
-    background-color: #006600;
+/* .carderbacee {
+    background-color: #CADFB5;
+} */
+
+.carderbacee:hover {
+    background-color: #E9E3AC;
+}
+
+/* .cardarboree {
+    background-color: #CDC0A9;
+} */
+
+.cardarboree:hover {
+    background-color: #E9E3AC;
+}
+
+/* .cardbulbose {
+    background-color: #E6D1B1;
+} */
+
+.cardbulbose:hover {
+    background-color: #E9E3AC;
+}
+
+/* .cardrampicanti {
+    background-color: #B5CEAA;
+} */
+
+.cardrampicanti:hover {
+    background-color: #E9E3AC;
 }
 
 .testohome p {
-    color: white;
+    color: black;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -420,14 +434,23 @@ p{
         line-height: 90px;
     }
 
+    #titolohome2{
+        margin: 5px 0 0 0;
+    }
+
 @media (max-width: 1270px){
     .contheader{
         padding: 12px 25px;
     }
 
-    .paragrafo, .paragrafoarboree{
+    .paragrafo{
         padding: 0 30px;
         padding-top: 30px;
+        max-width: 850px;
+    }
+
+    .paragrafoarboree{
+        padding: 0 30px;
         max-width: 850px;
     }
 
@@ -474,7 +497,7 @@ p{
     }    
 
     h4{
-        padding: 30px 30px 0 30px;
+        padding: 100px 30px 0 30px;
         max-width: 850px;
     }
 
@@ -489,6 +512,10 @@ p{
 
     .testo{
         max-width: 550px;
+    }
+
+    #susanna {
+        width: 100%;
     }
 
     .box{
@@ -517,22 +544,9 @@ p{
     .foto a:hover span, .foto a:hover:before {
         display: none;
       }
-
-    .erbacea {
-        max-width: 202px;
-    }
-    
-    .bulbosa {
-        max-width: 205px;
-    }
-        
-    .rampicante {
-        max-width: 252px;
-    }
     }
 
 @media (max-width: 910px) {
-
     .minimal img{
         margin-top: 35%;
     }
@@ -547,6 +561,7 @@ p{
 
     h4 {
         max-width: 480px;
+        text-align: center;
     }
 
     .card {
@@ -559,10 +574,6 @@ p{
     .hero, .hero1, .hero2, .hero3, .hero4, .paragrafo, .paragrafoarboree{
         flex-direction: column;
         padding: 0;
-    }
-
-    .paragrafo, .paragrafoarboree {
-        gap: 20px;
     }
 
     #hero {
@@ -585,14 +596,21 @@ p{
         margin-top: 20%;
     }
 
-    .paragrafo, .paragrafoarboree {
+    .paragrafo {
         margin: auto;
         width: 480px;
         padding-top: 30px;
+        gap: 20px;
     }
 
-    .arborea{
-        max-width: 370px;
+    .paragrafoarboree{
+        margin: auto;
+        width: 480px;
+        gap: 20px;
+    }
+
+    .dropdown-content{
+        visibility: hidden;
     }
 }
 
@@ -650,25 +668,13 @@ p{
         width: 350px;
     }
 
-    .paragrafo, .paragrafoarboree {
+    .paragrafo {
         max-width: 350px;
         padding-top: 30px;
     }
 
-    .erbacea {
-        max-width: 185px;
-    }
-
-    .arborea{
-        max-width: 337px;
-    }
-
-    .bulbosa {
-        max-width: 187px;
-    }
-
-    .rampicante {
-        max-width: 230px;
+    .paragrafoarboree{
+        max-width: 350px;
     }
 
     footer ul {
@@ -835,17 +841,4 @@ p{
         width: 320px;
         margin: auto;
     }
-
-    .erbacea{
-        width: 167px;
-    }
-
-    .arborea{
-        width: 171px;
-    }
-
-    .bulbosa{
-        width: 169px;
-    }
-
 }
