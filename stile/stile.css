@@ -200,6 +200,10 @@ h1{
     margin: 0;
 }
 
+.briciole {
+    display: flex;
+    flex-direction: column;
+}
 
 nav .crumbs {
     border-bottom: 1px solid black;
@@ -231,7 +235,7 @@ nav .crumbs {
 h2{
     font-weight: 600;
     font-size: 18px;
-    width:100%;
+    max-width: 374px;
     text-decoration: none;
 }
 
