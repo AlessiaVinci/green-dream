@@ -239,7 +239,6 @@ nav .crumbs {
 h2{
     font-weight: 600;
     font-size: 18px;
-    max-width: 374px;
     text-decoration: none;
     margin: auto;
 }
@@ -546,7 +545,6 @@ p{
     h2{
         font-weight: 600;
         font-size: 15px;
-        max-width: 235px;
         text-decoration: none;
     }
 
@@ -688,40 +686,6 @@ p{
 
     h1 {
         font-size: 45px;
-    }
-
-    nav .crumbs {
-        border-bottom: 1px solid black;
-    }
-    
-    .crumbs ol {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    .crumb {
-        display: inline-block;
-    }
-    
-    .crumb a::after {
-        display: inline-block;
-        color: #000;
-        content: '>';
-        font-size: 80%;
-        font-weight: bold;
-        padding: 0 3px;
-    }
-
-    .crumbs a {
-        font-size: 15px;
-        font-weight: 300;
-    }
-
-    h2{
-        font-weight: 600;
-        font-size: 15px;
-        max-width: 235px;
-        text-decoration: none;
     }
 
     p {
@@ -904,11 +868,6 @@ p{
         font-size: 25px;
     }
 
-    h2 {
-        font-size: 10px;
-        width: 194px;
-    }
-
     h3 {
         font-size: 17px;
     }
@@ -927,10 +886,6 @@ p{
 
      #titolohome2{
         width: 225px;
-    }
-
-    .box{
-        max-width: 335px;
     }
 
     .cardhome{
