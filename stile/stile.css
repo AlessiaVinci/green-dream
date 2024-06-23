@@ -211,7 +211,6 @@ nav .crumbs {
   
 .crumbs ol {
     list-style-type: none;
-    padding-left: 0;
 }
   
 .crumb {
@@ -222,14 +221,19 @@ nav .crumbs {
     display: inline-block;
     color: #000;
     content: '>';
+    padding-right: 10px;
     font-size: 80%;
     font-weight: bold;
-    padding: 0 3px;
 }
 
 .crumbs a {
     font-size: 18px;
     font-weight: 300;
+    padding: 0;
+}
+
+.crumbs ol {
+    padding-left: 0;
 }
 
 h2{
@@ -237,6 +241,7 @@ h2{
     font-size: 18px;
     max-width: 374px;
     text-decoration: none;
+    margin: auto;
 }
 
 h3{
@@ -887,7 +892,7 @@ p{
     }
 
     .hero, .hero1, .hero2, .hero3, .hero4 {
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     #hero {
@@ -900,7 +905,7 @@ p{
     }
 
     h2 {
-        font-size: 19px;
+        font-size: 10px;
         width: 194px;
     }
 
