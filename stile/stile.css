@@ -738,6 +738,10 @@ p{
         left: 0%;
     }
 
+    #home img {
+        margin-top: 10%;
+    }
+
     .illustrazione img {
         width: 75%;
         margin-top: 15%;
